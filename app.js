@@ -52,18 +52,16 @@ document.addEventListener("DOMContentLoaded", function() {
   const happyBtn = document.getElementById('happyBtn');
   happyBtn.onclick = function() {
     const yourNum = document.getElementById('yourNum').value;
-    numToStr = String(yourNum);
-    firstTreeSymbols = numToStr.substring(0, 3);
-    lastTreeSymbols = numToStr.substring(3, 6);
-    console.log(lastTreeSymbols);
-    if(numToStr.length == 6) {
-      firstPartSymbols = firstTreeSymbols;
-      secondPartSymbols = lastTreeSymbols;
+    let firstTreeSymbols = yourNum.substring(0, 3);
+    let lastTreeSymbols = yourNum.substring(3, 6);
+    if(yourNum.length == 6) {
       let firstPart = 0;
       let secondPart = 0;
-      for (i = 0; i<firstPartSymbols.lenght; i++){
-        firstPart += parseInt(firstPartSymbols[i]);
-        secondPart += parseInt(secondPartSymbols[i]);
+      for (i = 0; i<firstTreeSymbols.length; i++){
+        firstPart += parseInt(firstTreeSymbols[i]);
+        console.log("FTS" + firstTreeSymbols[i]);
+        secondPart += parseInt(lastTreeSymbols[i]);
+        console.log("SP" + lastTreeSymbols[i]);
       }
       if(firstPart == secondPart){
         alert('Yes');
