@@ -28,22 +28,43 @@
     Емкость ведра2 <input type="number" name="fname55">
     Емкость ведра3 <input type="number" name="fname66">
     
-    <input type="submit" value="Submit">
+    <input type="submit" value="Посчитать">
   </form>
 
-  <form name="myForm3" onsubmit="return validateForm3()">
-    <h2>Введите данные:</h2>
-    Введите число: <input type="number" name="fname12">
-    
-    <input type="submit" value="Submit">
-  </form>
+  <div style="margin-top: 5%;">
+<h2>Task 3</h2>
+<input type="text" id="yourNum" placeholder="Введите число">
+<button id="happyBtn">Мой билет счастливый?</button>
+</div>
 
+<h2>Task 4</h2>
+<input type="text" id="enterAge" placeholder="Сколько вам лет?">
+<button id="ageBtn">Узнать свой возрасной сегмент</button>
+</div>
 
+<h2>Task 4.2</h2>
+<input type="text" id="enterNum" placeholder="Введите число от 1 до 9ти">
+<button id="oneToNineBtn">Посчитать</button>
+</div>
 
+<h2>Task 4.3</h2>
+<input type="text" id="yearNum" placeholder="Введите год">
+<button id="yearBtn">Посчитать</button>
+</div>
 
+<div>
+  <h2>Convertor</h2>
+<input type="text" id="dollarNum" placeholder="сумма в $">
+  <select id="selectCur">
+    <option type="text" value="eur">EUR</option>
+    <option type="text" value="uah">UAH</option>
+    <option type="text" value="azn">AZN</option>
+  </select>
+  <button id="dollarBtn">Посчитать</button>
+  <p type="text" id="converted"></p>
 
-
-
+  
+</div>
 
 </body>
 </html>
