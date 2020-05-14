@@ -8,12 +8,42 @@
   <script src="app.js"></script>
 </head>
 <body>
-  <div>
-    <h1>Расчет количества банок краски</h1> 
-    <p>пожалуйста введите следующие данные</p>
-    <input type="text">
-    <input type="text">
-    <input type="text">
-  </div>
+  
+  <form name="myForm" style="margin-bottom:10%;" onsubmit="return validateForm()">
+    <h2>Введите данные:</h2>
+    Длина: <input type="number" name="fname">
+    Ширина: <input type="number" name="fname1">
+    Высота: <input type="number" name="fname2">
+    Результат: <span type="text" id="resQuantity"></span>
+    <input type="submit" value="Посчитать">
+  </form>
+
+
+  <form name="myForm2" onsubmit="return validateForm2()">
+    <h2>Введите данные:</h2>
+    Цена/кг1: <input type="number" name="fname11">
+    Цена/кг2: <input type="number" name="fname22">
+    Цена/кг3 <input type="number" name="fname33">
+    Емкость ведра1 <input type="number" name="fname44">
+    Емкость ведра2 <input type="number" name="fname55">
+    Емкость ведра3 <input type="number" name="fname66">
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <form name="myForm3" onsubmit="return validateForm3()">
+    <h2>Введите данные:</h2>
+    Введите число: <input type="number" name="fname12">
+    
+    <input type="submit" value="Submit">
+  </form>
+
+
+
+
+
+
+
+
 </body>
 </html>
